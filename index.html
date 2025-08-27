@@ -33,12 +33,12 @@
       referrerpolicy="no-referrer"
     />
   </head>
-  <body class="noto-sans-bengali">
+  <body class="primary-font">
     <header class="max-w-[1920px] mx-auto">
-      <nav class="flex justify-between px-16 py-5">
+      <nav class="flex justify-between lg:px-16 px-4 py-5">
         <div class="nav-left flex items-center gap-4">
-          <img src="./assets/logo.png" alt="logo" class="w-[50px] h-max" />
-          <p class="text-[#006747] font-bold text-2xl">
+          <img src="./assets/logo.png" alt="logo" class="lg:w-[3.5rem] w-[2rem]" />
+          <p class="text-[#006747] font-bold lg:text-2xl text-xl">
             Emergency <br />
             Service
           </p>
@@ -58,16 +58,15 @@
           </div>
           <button
             id="copy"
-            class="btn bg-[#00a63e] rounded-full text-white py-3 px-9 h-[3.25rem]"
+            class="btn bg-[#00a63e] rounded-full text-white py-3 px-9 h-[3.25rem] sm:display-none"
           >
             <span id="copy-count">2</span> Copy
           </button>
         </div>
       </nav>
       <div
-        class="hero flex flex-col py-6 bg-linear-to-r from-[#013223] via-[#006747] to-[#013223]"
-      >
-        <img src="./assets/logo.png" alt="govt-logo" class="h-[6rem]" />
+        class="hero flex flex-col py-6 bg-linear-to-r from-[#013223] via-[#006747] to-[#013223]">
+        <img src="./assets/logo.png" alt="govt-logo" class="lg:h-[6rem] h-[4rem]" />
         <h1 class="text-4xl my-4 font-bold text-white">
           Emergency Service Directory
         </h1>
@@ -78,10 +77,10 @@
       </div>
     </header>
 
-    <section class="max-w-[1920px] mx-auto p-14 flex bg-[#f5fff6] gap-6">
-      <main class="w-3/4">
-        <div class="grid grid-cols-3 gap-4">
-          <div class="card p-8 bg-white h-fit">
+    <section class="max-w-[1920px] mx-auto lg:p-14 p-4 lg:flex bg-[#f5fff6] gap-2">
+      <main class="lg:w-3/4">
+        <div class="grid grid-cols-3 gap-4 max-md:grid-cols-2">
+          <div class="card lg:p-8 p-4 bg-white h-fit">
             <div class="top flex justify-between">
               <div class="bg-[#FFE3E2] rounded-md w-[3rem] p-3">
                 <img src="./assets/emergency.png" alt="" />
@@ -108,20 +107,20 @@
               </button>
             </div>
           </div>
-          <div class="card p-8 bg-white h-fit">
+          <div class="card lg:p-8 p-4 bg-white h-fit">
             <div class="top flex justify-between">
               <div class="bg-[#FFE3E2] rounded-md w-[3rem] p-3">
-                <img src="./assets/emergency.png" alt="" />
+                <img src="./assets/police.png" alt="police" />
               </div>
               <span><i class="fa-regular fa-heart fa-xl"></i></span>
             </div>
             <div class="middle mt-4">
-              <h3 class="text-lg font-bold">জাতীয় জরুরি সেবা</h3>
-              <p class="text-[#5c5c5c]">National Emergency</p>
+              <h3 class="text-lg font-bold">পুলিশ</h3>
+              <p class="text-[#5c5c5c]">Police</p>
               <h3 class="text-3xl font-bold mt-4">999</h3>
               <span
-                class="h-[2.5rem] w-[6rem] bg-[#f2f2f2] inline-block p-2 rounded-full mt-2"
-                ><p class="text-[#5c5c5c] text-center">সার্বজনীন</p></span
+                class="h-[2.5rem] w-[5rem] bg-[#f2f2f2] inline-block p-2 rounded-full mt-2"
+                ><p class="text-[#5c5c5c] text-center">পুলিশ</p></span
               >
             </div>
             <div class="bottom mt-6 flex gap-2">
@@ -135,20 +134,20 @@
               </button>
             </div>
           </div>
-          <div class="card p-8 bg-white h-fit">
+          <div class="card lg:p-8 p-4 bg-white h-fit">
             <div class="top flex justify-between">
               <div class="bg-[#FFE3E2] rounded-md w-[3rem] p-3">
-                <img src="./assets/emergency.png" alt="" />
+                <img src="./assets/fire-service.png" alt="" />
               </div>
               <span><i class="fa-regular fa-heart fa-xl"></i></span>
             </div>
             <div class="middle mt-4">
-              <h3 class="text-lg font-bold">জাতীয় জরুরি সেবা</h3>
-              <p class="text-[#5c5c5c]">National Emergency</p>
+              <h3 class="text-lg font-bold">ফায়ার সার্ভিস</h3>
+              <p class="text-[#5c5c5c]">Fire Service</p>
               <h3 class="text-3xl font-bold mt-4">999</h3>
               <span
-                class="h-[2.5rem] w-[6rem] bg-[#f2f2f2] inline-block p-2 rounded-full mt-2"
-                ><p class="text-[#5c5c5c] text-center">সার্বজনীন</p></span
+                class="h-[2.5rem] w-[5rem] bg-[#f2f2f2] inline-block p-2 rounded-full mt-2"
+                ><p class="text-[#5c5c5c] text-center">ফায়ার</p></span
               >
             </div>
             <div class="bottom mt-6 flex gap-2">
@@ -162,20 +161,20 @@
               </button>
             </div>
           </div>
-          <div class="card p-8 bg-white h-fit">
+          <div class="card lg:p-8 p-4 bg-white h-fit">
             <div class="top flex justify-between">
               <div class="bg-[#FFE3E2] rounded-md w-[3rem] p-3">
-                <img src="./assets/emergency.png" alt="" />
+                <img src="./assets/ambulance.png" alt="" />
               </div>
               <span><i class="fa-regular fa-heart fa-xl"></i></span>
             </div>
             <div class="middle mt-4">
-              <h3 class="text-lg font-bold">জাতীয় জরুরি সেবা</h3>
-              <p class="text-[#5c5c5c]">National Emergency</p>
-              <h3 class="text-3xl font-bold mt-4">999</h3>
+              <h3 class="text-lg font-bold">অ্যাম্বুলেন্স</h3>
+              <p class="text-[#5c5c5c]">Ambulance</p>
+              <h3 class="text-3xl font-bold mt-4">1994-999999</h3>
               <span
-                class="h-[2.5rem] w-[6rem] bg-[#f2f2f2] inline-block p-2 rounded-full mt-2"
-                ><p class="text-[#5c5c5c] text-center">সার্বজনীন</p></span
+                class="h-[2.5rem] w-[4rem] bg-[#f2f2f2] inline-block p-2 rounded-full mt-2"
+                ><p class="text-[#5c5c5c] text-center">স্বাস্থ্য</p></span
               >
             </div>
             <div class="bottom mt-6 flex gap-2">
@@ -189,7 +188,7 @@
               </button>
             </div>
           </div>
-          <div class="card p-8 bg-white h-fit">
+          <div class="card lg:p-8 p-4 bg-white h-fit">
             <div class="top flex justify-between">
               <div class="bg-[#FFE3E2] rounded-md w-[3rem] p-3">
                 <img src="./assets/emergency.png" alt="" />
@@ -197,12 +196,12 @@
               <span><i class="fa-regular fa-heart fa-xl"></i></span>
             </div>
             <div class="middle mt-4">
-              <h3 class="text-lg font-bold">জাতীয় জরুরি সেবা</h3>
-              <p class="text-[#5c5c5c]">National Emergency</p>
-              <h3 class="text-3xl font-bold mt-4">999</h3>
+              <h3 class="text-lg font-bold">নারী ও শিশু সহায়তা</h3>
+              <p class="text-[#5c5c5c]">Women & Child Helpline</p>
+              <h3 class="text-3xl font-bold mt-4">109</h3>
               <span
-                class="h-[2.5rem] w-[6rem] bg-[#f2f2f2] inline-block p-2 rounded-full mt-2"
-                ><p class="text-[#5c5c5c] text-center">সার্বজনীন</p></span
+                class="h-[2.5rem] w-[5rem] bg-[#f2f2f2] inline-block p-2 rounded-full mt-2"
+                ><p class="text-[#5c5c5c] text-center">সহায়তা</p></span
               >
             </div>
             <div class="bottom mt-6 flex gap-2">
@@ -216,7 +215,7 @@
               </button>
             </div>
           </div>
-          <div class="card p-8 bg-white h-fit">
+          <div class="card lg:p-8 p-4 bg-white h-fit">
             <div class="top flex justify-between">
               <div class="bg-[#FFE3E2] rounded-md w-[3rem] p-3">
                 <img src="./assets/emergency.png" alt="" />
@@ -224,12 +223,12 @@
               <span><i class="fa-regular fa-heart fa-xl"></i></span>
             </div>
             <div class="middle mt-4">
-              <h3 class="text-lg font-bold">জাতীয় জরুরি সেবা</h3>
-              <p class="text-[#5c5c5c]">National Emergency</p>
-              <h3 class="text-3xl font-bold mt-4">999</h3>
+              <h3 class="text-lg font-bold">দুদক</h3>
+              <p class="text-[#5c5c5c]">Anti-Corruption</p>
+              <h3 class="text-3xl font-bold mt-4">106</h3>
               <span
-                class="h-[2.5rem] w-[6rem] bg-[#f2f2f2] inline-block p-2 rounded-full mt-2"
-                ><p class="text-[#5c5c5c] text-center">সার্বজনীন</p></span
+                class="h-[2.5rem] w-[5rem] bg-[#f2f2f2] inline-block p-2 rounded-full mt-2"
+                ><p class="text-[#5c5c5c] text-center">সরকারি</p></span
               >
             </div>
             <div class="bottom mt-6 flex gap-2">
@@ -243,7 +242,7 @@
               </button>
             </div>
           </div>
-          <div class="card p-8 bg-white h-fit">
+          <div class="card lg:p-8 p-4 bg-white h-fit">
             <div class="top flex justify-between">
               <div class="bg-[#FFE3E2] rounded-md w-[3rem] p-3">
                 <img src="./assets/emergency.png" alt="" />
@@ -251,12 +250,12 @@
               <span><i class="fa-regular fa-heart fa-xl"></i></span>
             </div>
             <div class="middle mt-4">
-              <h3 class="text-lg font-bold">জাতীয় জরুরি সেবা</h3>
-              <p class="text-[#5c5c5c]">National Emergency</p>
-              <h3 class="text-3xl font-bold mt-4">999</h3>
+              <h3 class="text-lg font-bold">বিদ্যুৎ বিভ্রাট</h3>
+              <p class="text-[#5c5c5c]">Electricity Outage</p>
+              <h3 class="text-3xl font-bold mt-4">16216</h3>
               <span
-                class="h-[2.5rem] w-[6rem] bg-[#f2f2f2] inline-block p-2 rounded-full mt-2"
-                ><p class="text-[#5c5c5c] text-center">সার্বজনীন</p></span
+                class="h-[2.5rem] w-[5rem] bg-[#f2f2f2] inline-block p-2 rounded-full mt-2"
+                ><p class="text-[#5c5c5c] text-center">বিদ্যুৎ</p></span
               >
             </div>
             <div class="bottom mt-6 flex gap-2">
@@ -270,7 +269,7 @@
               </button>
             </div>
           </div>
-          <div class="card p-8 bg-white h-fit">
+          <div class="card lg:p-8 p-4 bg-white h-fit">
             <div class="top flex justify-between">
               <div class="bg-[#FFE3E2] rounded-md w-[3rem] p-3">
                 <img src="./assets/emergency.png" alt="" />
@@ -278,12 +277,12 @@
               <span><i class="fa-regular fa-heart fa-xl"></i></span>
             </div>
             <div class="middle mt-4">
-              <h3 class="text-lg font-bold">জাতীয় জরুরি সেবা</h3>
-              <p class="text-[#5c5c5c]">National Emergency</p>
-              <h3 class="text-3xl font-bold mt-4">999</h3>
+              <h3 class="text-lg font-bold">ব্র্যাক</h3>
+              <p class="text-[#5c5c5c]">Brac</p>
+              <h3 class="text-3xl font-bold mt-4">16445</h3>
               <span
-                class="h-[2.5rem] w-[6rem] bg-[#f2f2f2] inline-block p-2 rounded-full mt-2"
-                ><p class="text-[#5c5c5c] text-center">সার্বজনীন</p></span
+                class="h-[2.5rem] w-[5rem] bg-[#f2f2f2] inline-block p-2 rounded-full mt-2"
+                ><p class="text-[#5c5c5c] text-center">এনজিও</p></span
               >
             </div>
             <div class="bottom mt-6 flex gap-2">
@@ -297,7 +296,7 @@
               </button>
             </div>
           </div>
-          <div class="card p-8 bg-white h-fit">
+          <div class="card lg:p-8 p-4 bg-white h-fit">
             <div class="top flex justify-between">
               <div class="bg-[#FFE3E2] rounded-md w-[3rem] p-3">
                 <img src="./assets/emergency.png" alt="" />
@@ -305,12 +304,12 @@
               <span><i class="fa-regular fa-heart fa-xl"></i></span>
             </div>
             <div class="middle mt-4">
-              <h3 class="text-lg font-bold">জাতীয় জরুরি সেবা</h3>
-              <p class="text-[#5c5c5c]">National Emergency</p>
-              <h3 class="text-3xl font-bold mt-4">999</h3>
+              <h3 class="text-lg font-bold">বাংলাদেশ রেলওয়ে</h3>
+              <p class="text-[#5c5c5c]">Bangladesh Railway</p>
+              <h3 class="text-3xl font-bold mt-4">163</h3>
               <span
                 class="h-[2.5rem] w-[6rem] bg-[#f2f2f2] inline-block p-2 rounded-full mt-2"
-                ><p class="text-[#5c5c5c] text-center">সার্বজনীন</p></span
+                ><p class="text-[#5c5c5c] text-center">পরিবহন</p></span
               >
             </div>
             <div class="bottom mt-6 flex gap-2">
@@ -326,9 +325,27 @@
           </div>
         </div>
       </main>
-      <aside class="w-1/4 h-[100vh] border"></aside>
+
+      <aside class="lg:w-1/4 p-6 bg-white rounded-xl max-sm:mt-8">
+        <div class="flex justify-between items-center mb-4">
+          <h3 class="text-xl font-semibold">
+            <span><i class="fa-regular fa-clock"></i></span> Call History
+          </h3>
+          <button
+            class="btn btn-primary bg-[#00A63E] text-white border-none rounded-full p-6 shadow-none"
+          >
+            Clear
+          </button>
+        </div>
+        <div id="history"></div>
+      </aside>
     </section>
 
-    <footer></footer>
+  
+   
+
+  
+  </script>
+    <script src="./script.js"></script>
   </body>
 </html>
