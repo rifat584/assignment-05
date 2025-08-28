@@ -16,12 +16,11 @@ for (const find of findHearts) {
 const coin = document.getElementById("coin-count");
 let coinCount = 100;
 
-const findCalls = document.getElementsByClassName("btn-primary");
+const findCalls = document.getElementsByClassName("call-btn");
 for (const btn of findCalls) {
   btn.addEventListener("click", function (e) {
     const serviceName =
       e.target.parentNode.parentNode.childNodes[3].childNodes[3].innerText;
-
     const serviceNameBengali =
       e.target.parentNode.parentNode.childNodes[3].childNodes[1].innerText;
     const serviceNum =
@@ -33,12 +32,14 @@ for (const btn of findCalls) {
     if (coinCount < 20) {
       alert("You don't have enough coins");
     } else {
+      // Reduce Coins for each call by 20
       coinCount = coinCount - 20;
       coin.innerHTML = coinCount;
+
       // Adding to History
       const mainElement = document.getElementById("history");
       const history = document.createElement("div");
-
+      history.setAttribute("id", "history");
       history.innerHTML = `
         <div>
         <h4> ${serviceNameBengali}</h4>
@@ -56,8 +57,16 @@ for (const btn of findCalls) {
       serviceNameBengaliStyle.classList.add("serviceNameStyle");
 
       mainElement.appendChild(history);
+
       // Alert with service name & Number
       alert(`Calling ${serviceName} ${serviceNum}`);
     }
   });
 }
+
+// Clear Call History
+const clearBtn = document.getElementById("clear-history");
+clearBtn.addEventListener("click", function () {
+  const history = document.getElementById("history");
+  history.innerHTML = "";
+});
