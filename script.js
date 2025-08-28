@@ -70,3 +70,25 @@ clearBtn.addEventListener("click", function () {
   const history = document.getElementById("history");
   history.innerHTML = "";
 });
+
+// Copy Numbers
+const cards = document.getElementsByClassName("bottom");
+const copyNum = document.getElementById("copy-count");
+let copyCount = 2;
+for (const card of cards) {
+  card.addEventListener("click", function (e) {
+    if (e.target.innerText === "Copy") {
+      // Increase Copy Counts
+      copyCount++;
+      copyNum.innerHTML = copyCount;
+
+      // Copy to Clipboard
+      const numberToCopy =
+        card.parentNode.childNodes[3].childNodes[5].innerText;
+      navigator.clipboard.writeText(numberToCopy);
+
+      // Show Copied Number Alert
+      alert(`Copied the number ${numberToCopy}`);
+    }
+  });
+}
