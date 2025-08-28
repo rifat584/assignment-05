@@ -47,6 +47,7 @@ for (const btn of findCalls) {
         </div>
         <p> ${timeStr} </p>
 `;
+      // Styling History Container
       history.classList.add(
         "serviceContainerStyle",
         "primary-font",

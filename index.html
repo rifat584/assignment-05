@@ -36,7 +36,7 @@
   </head>
   <body class="primary-font">
     <header class="max-w-[1920px] mx-auto">
-      <nav class="flex justify-between lg:px-16 px-4 py-5">
+      <nav class="flex justify-between lg:px-16 px-4 py-5 max-sm:flex-col max-sm:items-center max-sm:gap-4">
         <div class="nav-left flex items-center gap-4">
           <img src="./assets/logo.png" alt="logo" class="lg:w-[3.5rem] w-[2rem]" />
           <p class="text-[#006747] font-bold lg:text-2xl text-xl">
@@ -59,7 +59,7 @@
           </div>
           <button
             id="copy"
-            class="btn bg-[#00a63e] rounded-full text-white py-3 px-9 h-[3.25rem] max-sm:hidden"
+            class="btn bg-[#00a63e] rounded-full text-white py-3 px-9 h-[3.25rem]"
           >
             <span id="copy-count">2</span> Copy
           </button>
@@ -68,19 +68,19 @@
       <div
         class="hero flex flex-col py-6 bg-linear-to-r from-[#013223] via-[#006747] to-[#013223] text-center">
         <img src="./assets/logo.png" alt="govt-logo" class="lg:h-[6rem] h-[4rem]" />
-        <h1 class="text-4xl my-4 font-bold text-white">
+        <h1 class="text-4xl my-4 font-bold text-white max-sm:px-4">
           Emergency Service Directory
         </h1>
-        <p class="text-white">
+        <p class="text-white max-sm:px-4">
           Government Emergency Services at Your Fingertip – A Project by
           Government of the People’s Republic of Bangladesh
         </p>
       </div>
     </header>
 
-    <section class="max-w-[1920px] mx-auto lg:p-14 p-4 lg:flex bg-[#f5fff6] gap-2">
+    <section class="max-w-[1920px] mx-auto lg:p-14 p-4 lg:flex bg-[#f5fff6] gap-2 content-stretch">
       <main class="lg:w-3/4">
-        <div id="main-section" class="grid grid-cols-3 gap-4 max-md:grid-cols-2">
+        <div id="main-section" class="grid grid-cols-3 gap-4 max-md:grid-cols-2 justify-center items-center">
           <div class="card lg:p-8 p-4 bg-white h-fit">
             <div class="top flex justify-between">
               <div class="bg-[#FFE3E2] rounded-md w-[3rem] p-3">
@@ -135,7 +135,7 @@
               </button>
             </div>
           </div>
-          <div class="card lg:p-8 p-4 bg-white h-fit">
+          <div class="card flex-1 lg:p-8 p-4 bg-white h-fit">
             <div class="top flex justify-between">
               <div class="bg-[#FFE3E2] rounded-md w-[3rem] p-3">
                 <img src="./assets/fire-service.png" alt="" />
@@ -162,7 +162,7 @@
               </button>
             </div>
           </div>
-          <div class="card lg:p-8 p-4 bg-white h-fit">
+          <div class="card lg:p-8 p-4 bg-white h-">
             <div class="top flex justify-between">
               <div class="bg-[#FFE3E2] rounded-md w-[3rem] p-3">
                 <img src="./assets/ambulance.png" alt="" />
